@@ -22,17 +22,17 @@ public abstract class OrderProcessingTemplate {
         if (order.getBookInstance() == null) {
             throw new IllegalArgumentException("Заказ должен иметь экземпляр книги");
         }
-        System.out.println("✅ Валидация заказа пройдена");
+        System.out.println("Валидация заказа пройдена");
     }
 
     protected void updateBookInstanceStatus(Order order) {
         BookInstance bookInstance = order.getBookInstance();
         bookInstance.setStatus(getTargetBookStatus());
-        System.out.println("🔄 Статус экземпляра книги изменен на: " + getTargetBookStatus());
+        System.out.println("Статус экземпляра книги изменен на: " + getTargetBookStatus());
     }
 
     protected void logProcessing(Order order) {
-        System.out.println("📝 Лог: Обработка заказа #" + order.getId() +
+        System.out.println("Обработка заказа #" + order.getId() +
                 " завершена. Новый статус: " + getTargetOrderStatus());
     }
 

@@ -35,14 +35,14 @@ public class OrderReturnProcessor extends OrderProcessingTemplate {
         );
 
         if (fine > 0) {
-            System.out.println("💰 Рассчитан штраф: " + fine + " руб.");
+            System.out.println("Рассчитан штраф: " + fine + " руб.");
         }
 
-        System.out.println("🔄 Статус заказа изменен на: RETURNED");
+        System.out.println("Статус заказа изменен на: RETURNED");
     }
 
     @Override
     protected void notifyUser(Order order) {
-        System.out.println("📨 Уведомление: Книга возвращена в библиотеку");
+        System.out.println("Уведомление: Книга возвращена в библиотеку");
     }
 }

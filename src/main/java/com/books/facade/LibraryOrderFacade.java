@@ -30,7 +30,7 @@ public class LibraryOrderFacade {
                                                  String notificationType,
                                                  boolean enableLogging,
                                                  boolean enableCaching) {
-        System.out.println("🚀 Фасад: Создание заказа с уведомлениями");
+        System.out.println("Создание заказа с уведомлениями");
 
         OrderDTO order = orderService.createOrderWithBuilder(orderDTO);
 
@@ -57,7 +57,7 @@ public class LibraryOrderFacade {
 
     public OrderDTO updateOrderStatusWithNotification(UUID orderId, OrderStatus newStatus,
                                                       String notificationType) {
-        System.out.println("🚀 Фасад: Обновление статуса заказа");
+        System.out.println("Обновление статуса заказа");
 
         OrderDTO order = orderService.updateOrderStatus(orderId, newStatus);
 
@@ -74,7 +74,7 @@ public class LibraryOrderFacade {
     }
 
     public OrderSummary getOrderSummary(UUID orderId) {
-        System.out.println("🚀 Фасад: Получение полной информации о заказе");
+        System.out.println("Получение полной информации о заказе");
 
         OrderDTO order = orderService.findById(orderId);
 

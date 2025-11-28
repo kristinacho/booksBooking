@@ -11,7 +11,7 @@ public class EmailNotificationObserver implements OrderStatusObserver {
                 order.getId(), oldStatus, newStatus
         );
 
-        System.out.println("📧 Отправка email пользователю: " + order.getUser().getEmail());
-        System.out.println("📧 Сообщение: " + message);
+        System.out.println("Отправка email пользователю: " + order.getUser().getEmail());
+        System.out.println("Сообщение: " + message);
     }
 }

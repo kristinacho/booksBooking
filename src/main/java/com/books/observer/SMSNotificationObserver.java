@@ -11,7 +11,7 @@ public class SMSNotificationObserver implements OrderStatusObserver {
                 order.getId(), newStatus
         );
 
-        System.out.println("📱 Отправка SMS пользователю: " + order.getUser().getPhone());
-        System.out.println("📱 Сообщение: " + message);
+        System.out.println("Отправка SMS пользователю: " + order.getUser().getPhone());
+        System.out.println("Сообщение: " + message);
     }
 }

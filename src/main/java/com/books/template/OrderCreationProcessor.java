@@ -18,11 +18,11 @@ public class OrderCreationProcessor extends OrderProcessingTemplate {
     @Override
     protected void updateOrderStatus(Order order) {
         order.setStatus(OrderStatus.CREATED);
-        System.out.println("🔄 Статус заказа изменен на: CREATED");
+        System.out.println("Статус заказа изменен на: CREATED");
     }
 
     @Override
     protected void notifyUser(Order order) {
-        System.out.println("📨 Уведомление: Ваш заказ создан и ожидает обработки");
+        System.out.println("Уведомление: Ваш заказ создан и ожидает обработки");
     }
 }
